@@ -28,11 +28,6 @@ $.addEventListener("DOMContentLoaded", () => {
       // Répondre qqch. à l'utilisateur en front.
       if (response.status === 200) {
         alert("Un mail vous a été envoyé");
-        $.querySelector("#firstName").value = "";
-        $.querySelector("#lastName").value = "";
-        $.querySelector("#email").value = "";
-        $.querySelector("#subject").value = "";
-        $.querySelector("#message").value = "";
       } else {
         alert("Une erreur est survenue");
       }
