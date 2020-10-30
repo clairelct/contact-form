@@ -20,10 +20,7 @@ $.addEventListener("DOMContentLoaded", () => {
       console.log(data);
 
       // Enregistrer response AXIOS
-      const response = await axios.post(
-        "https://085941f96fcf.ngrok.io/form",
-        data
-      );
+      const response = await axios.post("http://localhost:3000/form", data);
 
       // Répondre qqch. à l'utilisateur en front.
       if (response.status === 200) {
