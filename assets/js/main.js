@@ -21,7 +21,7 @@ $.addEventListener("DOMContentLoaded", () => {
 
       // Enregistrer response AXIOS
       const response = await axios.post(
-        "https://contact-form-cl.herokuapp.com/",
+        "https://contact-form-cl.herokuapp.com/form",
         data
       );
 
