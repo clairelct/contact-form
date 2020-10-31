@@ -20,7 +20,10 @@ $.addEventListener("DOMContentLoaded", () => {
       console.log(data);
 
       // Enregistrer response AXIOS
-      const response = await axios.post("http://localhost:3000/form", data);
+      const response = await axios.post(
+        "https://contact-form-cl.herokuapp.com/",
+        data
+      );
 
       // Répondre qqch. à l'utilisateur en front.
       if (response.status === 200) {
